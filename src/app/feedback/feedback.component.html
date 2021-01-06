@@ -1,0 +1,96 @@
+<app-top-bar></app-top-bar>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+            <!-- Navbar Brand -->
+           <h1>Feedback Form</h1>    
+        </div>
+    </nav>
+</header>
+
+
+<div class="container">
+    <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+            <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
+            <h1>Give your Feedback</h1>
+        </div>
+
+        <!-- Registeration Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+            <form [formGroup]="formGroup" (ngSubmit)="storefeedback()">
+                <div class="row">
+
+                    <!-- First Name -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input  type="text" name="firstname"  placeholder="First Name" formControlName="firstname" [ngClass]="f.firstname.touched && f.firstname.invalid ? 'text-danger' : 'text-success'" autocomplete="off"  class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input id="lastName" type="text" name="lastname" placeholder="Last Name" formControlName="lastname" [ngClass]="f.lastname.touched && f.lastname.invalid ? 'text-danger' : 'text-success'" autocomplete="off" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-envelope text-muted"></i>
+                            </span>
+                        </div>
+                        <input id="email" type="email" name="email" placeholder="Email Address" formControlName="email" [ngClass]="f.email.touched && f.email.invalid ? 'text-danger' : 'text-success'" autocomplete="off" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="input-group col-lg-12 mb-0">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-phone-square text-muted"></i>
+                            </span>
+                        </div>
+                        
+                        <input id="phoneNumber" type="tel" name="phone" placeholder="Phone Number" formControlName="Phoneno" autocomplete="off" class="form-control bg-white border-md border-left-0 pl-3" [ngClass]="f.Phoneno.touched && f.Phoneno.invalid ? 'text-danger' : 'text-success'">
+                        
+                    </div>
+                    
+                    <div class="input-group col-lg-12 mt-4 ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-id-card-o text-muted"></i>
+                            </span>
+                        </div>
+                       
+                        <textarea #message class="form-control bg-white border-md border-left-0 pl-1" name="Feedback" formControlName="Feedback" [ngClass]="f.Feedback.touched && f.Feedback.invalid ? 'text-danger' : 'text-success'" autocomplete="off"   placeholder="Write Your Feedback.. " ></textarea>
+                        
+                    </div>
+                    <div class="input-group col-lg-12 mb-3">
+                        <mat-hint style="margin-left: auto;" >{{message.value.length}} / 256</mat-hint>
+                    </div>
+                   
+
+                    
+                    <!-- Submit Button -->
+                    <div class="form-group col-lg-12 mx-auto mb-0">
+                        <button type="submit" class="btn btn-primary btn-block py-2">
+                            <span class="font-weight-bold">Submit your Feedback</span>
+                        </button>
+                    </div>
+
+                   
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

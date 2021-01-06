@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden ;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+
+
+
+

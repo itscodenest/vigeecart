@@ -1,0 +1,108 @@
+
+.homepage {
+  overflow-y: auto;
+  overflow-x: hidden;
+ 
+}
+.itm {
+  padding: 1px;
+  border-radius: 5px;
+  max-height: 320px;
+}
+.caro {
+  max-height: 550px;
+  min-height: 550px;
+}
+.maincaro {
+  padding: 0;
+}
+.boxalign2 {
+  background-attachment: fixed;
+  object-fit: fill;
+  padding: 6px;
+  // width: fit-content;
+  height: 38px;
+  right: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.boxalign2:hover {
+  border: 2px solid #80bdff;
+}
+.RightPos {
+  margin-left: auto;
+}
+.fixed-topnav {
+  position: relative;
+}
+
+
+.fullpage {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 600px) {
+  .boxalign2 {
+    min-width: 100%;
+  }
+  .caro {
+    max-height: 25rem;
+    min-height: 15.62rem;
+  }
+  .card{
+    max-width: 25rem;
+    min-width: 15.62rem;
+  }
+}
+.PrdName {
+  font-size: 1.2rem;
+  
+}
+.prdStyle {
+  background-color: #ccc;
+  color: #000;
+  padding: 8px 15px 8px 15px;
+  border-radius: 20px;
+ 
+}
+.Prdimg{
+  height: 14.2rem; 
+  max-width: 400px;
+  min-width: 250px;
+}
+div.filter{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  padding: 18px;
+ 
+  }
+// card
+
+.card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 0.5;
+  min-width: 15.62rem;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width:22rem;
+}
+ 
+.ratings i {
+  font-size: 14px;
+  margin-right: 2px
+}
+
+.p-description {
+  font-size: 12px;
+  margin-top: 11px
+}
+

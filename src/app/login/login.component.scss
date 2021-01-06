@@ -1,0 +1,25 @@
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://cdn.pixabay.com/photo/2017/11/28/13/46/dark-mood-food-2983709_1280.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+input:hover{
+    z-index: 0.3;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(0.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(0.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(0.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.ng-invalid.ng-dirty:not(form), .ng-invalid:not(form).form-submitted{
+  input{border: solid 2px lightcoral;}
+}
